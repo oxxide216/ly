@@ -298,7 +298,7 @@ void config_defaults()
 	config.save = true;
 	config.save_file = strdup("/etc/ly/save");
 	config.service_name = strdup("ly");
-	config.shutdown_cmd = strdup("/sbin/shutdown -a now");
+	config.shutdown_cmd = strdup("/sbin/runit-init 0");
 	config.shutdown_key = strdup("F1");
 	config.term_reset_cmd = strdup("/usr/bin/tput reset");
 	config.tty = 2;
